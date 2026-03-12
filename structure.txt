@@ -1,0 +1,153 @@
+555-timer-design-toolkit
+│
+├── index.html
+│
+├── circuits/
+│   ├── monostable.html
+│   ├── astable.html
+│   ├── pwm.html
+│   ├── bistable.html
+│   ├── tone-generator.html
+│   ├── schmitt-trigger.html
+│   ├── missing-pulse.html
+│   └── adjustable-delay.html
+│
+├── css/
+│   ├── style.css
+│   └── darkmode.css
+│
+├── js/
+│   ├── calculators.js
+│   ├── solver.js
+│   ├── waveformSimulator.js
+│   ├── resistorSeries.js
+│   ├── units.js
+│   └── schematicRenderer.js
+│
+├── images/
+│   └── schematics/
+│
+├── docs/
+│   ├── 555-operation.md
+│   └── equations.md
+│
+├── examples/
+│   ├── led-blinker.html
+│   └── tone-generator-demo.html
+│
+├── README.md
+├── LICENSE
+└── CHANGELOG.md
+
+
+555-timer-toolkit/
+│
+├── index.html
+│
+├── circuits/
+│   ├── monostable.html
+│   ├── astable.html
+│   ├── pwm.html
+│   ├── bistable.html
+│   ├── tone.html
+│   ├── schmitt.html
+│   ├── missing-pulse.html
+│   └── delay.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── calculators.js
+│   └── units.js
+│
+└── README.md
+
+555-timer-toolkit
+│
+├── index.html
+│
+├── circuits/
+│   ├── monostable.html
+│   ├── astable.html
+│   ├── pwm.html
+│   ├── bistable.html
+│   ├── tone.html
+│   └── delay.html
+│
+├── components/
+│   ├── header.html
+│   └── nav.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── calculators.js
+│   ├── units.js
+│   └── templateLoader.js
+
+555-timer-toolkit
+│
+├── index.html
+│
+├── circuits
+│   └── monostable.html
+│
+├── components
+│   ├── header.html
+│   ├── nav.html
+│   └── footer.html
+│
+├── css
+│   └── style.css
+│
+└── js
+    ├── calculators.js
+    ├── units.js
+    └── templateLoader.js
+
+Circuits
+Monostable (one-shot)
+Astable oscillator
+PWM generator
+Adjustable delay
+Tone generator
+Bistable reference
+
+Tools
+Component calculators
+Unit conversion
+Engineering unit formatting
+E12 resistor suggestions
+E24 resistor suggestions
+Astable design solver
+
+555-timer-toolkit
+│
+├── index.html
+│
+├── circuits
+│   ├── monostable.html
+│   ├── astable.html
+│   ├── pwm.html
+│   ├── delay.html
+│   ├── tone.html
+│   └── bistable.html
+│
+├── components
+│   ├── header.html
+│   ├── nav.html
+│   └── footer.html
+│
+├── css
+│   └── style.css
+│
+├── js
+│   ├── calculators.js
+│   ├── units.js
+│   ├── resistorSeries.js
+│   └── templateLoader.js
+│
+├── README.md
+└── LICENSE
