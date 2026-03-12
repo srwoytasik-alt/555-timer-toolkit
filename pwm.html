@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>555 PWM Generator</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="../js/templateLoader.js"></script>
+<script src="../js/calculators.js"></script>
+<script src="../js/units.js"></script>
+<script src="../js/resistorSeries.js"></script>
+
+</head>
+
+<body onload="
+loadComponent('header','../components/header.html');
+loadComponent('nav','../components/nav.html');
+loadComponent('footer','../components/footer.html');
+">
+
+<div id="header"></div>
+<div id="nav"></div>
+
+<main>
+
+<h2>PWM Generator</h2>
+
+<p>
+A diode across R2 allows independent charge and discharge paths, producing adjustable duty cycle PWM.
+</p>
+
+<h3>Calculator</h3>
+
+<label>R1 (ohms)</label>
+<input id="pwmR1">
+
+<label>R2 (ohms)</label>
+<input id="pwmR2">
+
+<label>Capacitor</label>
+<input id="pwmC">
+
+<select id="pwmUnit">
+<option value="uF">µF</option>
+<option value="nF">nF</option>
+<option value="pF">pF</option>
+</select>
+
+<br><br>
+
+<button onclick="calcPWM()">Calculate</button>
+
+<h3 id="pwmResult"></h3>
+
+</main>
+
+<div id="footer"></div>
+
+</body>
+</html>

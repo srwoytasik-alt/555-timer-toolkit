@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>555 Tone Generator</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="../js/templateLoader.js"></script>
+<script src="../js/calculators.js"></script>
+<script src="../js/units.js"></script>
+<script src="../js/resistorSeries.js"></script>
+
+</head>
+
+<body onload="
+loadComponent('header','../components/header.html');
+loadComponent('nav','../components/nav.html');
+loadComponent('footer','../components/footer.html');
+">
+
+<div id="header"></div>
+<div id="nav"></div>
+
+<main>
+
+<h2>555 Tone Generator</h2>
+
+<p>
+An astable oscillator can generate audible tones when connected to a speaker.
+</p>
+
+<h3>Calculator</h3>
+
+<label>R1 (ohms)</label>
+<input id="toneR1">
+
+<label>R2 (ohms)</label>
+<input id="toneR2">
+
+<label>Capacitor</label>
+<input id="toneC">
+
+<select id="toneUnit">
+<option value="uF">µF</option>
+<option value="nF">nF</option>
+<option value="pF">pF</option>
+</select>
+
+<br><br>
+
+<button onclick="calcTone()">Calculate Frequency</button>
+
+<h3 id="toneResult"></h3>
+
+</main>
+
+<div id="footer"></div>
+
+</body>
+</html>

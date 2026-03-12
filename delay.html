@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>555 Delay Timer</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="../js/templateLoader.js"></script>
+<script src="../js/calculators.js"></script>
+<script src="../js/units.js"></script>
+<script src="../js/resistorSeries.js"></script>
+
+</head>
+
+<body onload="
+loadComponent('header','../components/header.html');
+loadComponent('nav','../components/nav.html');
+loadComponent('footer','../components/footer.html');
+">
+
+<div id="header"></div>
+<div id="nav"></div>
+
+<main>
+
+<h2>Adjustable Delay Timer</h2>
+
+<p>
+This circuit generates a delay before the output activates.
+</p>
+
+<h3>Equation</h3>
+
+<p>T = 1.1 × R × C</p>
+
+<h3>Calculator</h3>
+
+<label>Resistor (ohms)</label>
+<input id="delayR">
+
+<label>Capacitor</label>
+<input id="delayC">
+
+<select id="delayUnit">
+<option value="uF">µF</option>
+<option value="nF">nF</option>
+<option value="pF">pF</option>
+</select>
+
+<br><br>
+
+<button onclick="calcDelay()">Calculate Delay</button>
+
+<h3 id="delayResult"></h3>
+
+</main>
+
+<div id="footer"></div>
+
+</body>
+</html>
