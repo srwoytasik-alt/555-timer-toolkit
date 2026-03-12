@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>555 Astable Oscillator</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="../js/templateLoader.js"></script>
+<script src="../js/calculators.js"></script>
+<script src="../js/units.js"></script>
+<script src="../js/resistorSeries.js"></script>
+
+</head>
+
+<body onload="
+loadComponent('header','../components/header.html');
+loadComponent('nav','../components/nav.html');
+loadComponent('footer','../components/footer.html');
+">
+
+<div id="header"></div>
+<div id="nav"></div>
+
+<main>
+
+<h2>Astable Oscillator</h2>
+
+<p>
+In astable mode the 555 continuously oscillates producing a square wave output.
+</p>
+
+<h3>Frequency Equation</h3>
+
+<p>f = 1.44 / ((R1 + 2R2) × C)</p>
+
+<h3>Calculator</h3>
+
+<label>R1 (ohms)</label>
+<input id="r1">
+
+<label>R2 (ohms)</label>
+<input id="r2">
+
+<label>Capacitor</label>
+<input id="c">
+
+<select id="capUnit">
+<option value="uF">µF</option>
+<option value="nF">nF</option>
+<option value="pF">pF</option>
+</select>
+
+<br><br>
+
+<button onclick="calcAstable()">Calculate Frequency</button>
+
+<h3 id="freqResult"></h3>
+
+<h3>Design Mode</h3>
+
+<p>Enter desired frequency and capacitor value.</p>
+
+<label>Target Frequency (Hz)</label>
+<input id="targetFreq">
+
+<label>Capacitor</label>
+<input id="solverCap">
+
+<select id="solverUnit">
+<option value="uF">µF</option>
+<option value="nF">nF</option>
+<option value="pF">pF</option>
+</select>
+
+<br><br>
+
+<button onclick="solveAstable()">Solve Components</button>
+
+<h3 id="solverResult"></h3>
+
+</main>
+
+<div id="footer"></div>
+
+</body>
+</html>

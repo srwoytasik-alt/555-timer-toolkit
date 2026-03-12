@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>555 Bistable Mode</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="../js/templateLoader.js"></script>
+<script src="../js/resistorSeries.js"></script>
+
+</head>
+
+<body onload="
+loadComponent('header','../components/header.html');
+loadComponent('nav','../components/nav.html');
+loadComponent('footer','../components/footer.html');
+">
+
+<div id="header"></div>
+<div id="nav"></div>
+
+<main>
+
+<h2>Bistable Mode</h2>
+
+<p>
+In bistable mode the 555 operates as a flip-flop with two stable states.
+The output changes when triggered and remains latched until reset.
+</p>
+
+<h3>Truth Table</h3>
+
+<table border="1">
+
+<tr>
+<th>Trigger</th>
+<th>Reset</th>
+<th>Output</th>
+</tr>
+
+<tr>
+<td>HIGH</td>
+<td>HIGH</td>
+<td>No Change</td>
+</tr>
+
+<tr>
+<td>LOW</td>
+<td>HIGH</td>
+<td>SET (Output HIGH)</td>
+</tr>
+
+<tr>
+<td>HIGH</td>
+<td>LOW</td>
+<td>RESET (Output LOW)</td>
+</tr>
+
+</table>
+
+</main>
+
+<div id="footer"></div>
+
+</body>
+</html>
