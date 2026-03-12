@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>555 Monostable Timer</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="../js/templateLoader.js"></script>
+<script src="../js/calculators.js"></script>
+<script src="../js/units.js"></script>
+<script src="../js/resistorSeries.js"></script>
+
+</head>
+
+<body onload="
+loadComponent('header','../components/header.html');
+loadComponent('nav','../components/nav.html');
+loadComponent('footer','../components/footer.html');
+">
+
+<div id="header"></div>
+
+<div id="nav"></div>
+
+<main>
+
+<h2>Monostable Timer</h2>
+
+<p>
+In monostable mode the 555 produces a single output pulse when triggered.
+The pulse width depends on resistor R and capacitor C.
+</p>
+
+<h3>Timing Equation</h3>
+
+<p>T = 1.1 × R × C</p>
+
+<h3>Calculator</h3>
+
+<label>Desired Time (seconds)</label>
+<input id="time">
+
+<label>Capacitor Value</label>
+
+<input id="cap">
+
+<select id="capUnit">
+
+<option value="uF">µF</option>
+<option value="nF">nF</option>
+<option value="pF">pF</option>
+
+</select>
+
+<br><br>
+
+<button onclick="calcMonostable()">Calculate Resistor</button>
+
+<h3 id="result"></h3>
+
+</main>
+
+<div id="footer"></div>
+<input id="time" placeholder="1">
+
+<input id="cap" placeholder="100">
+
+
+</body>
+
+</html>
